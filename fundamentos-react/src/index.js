@@ -1,13 +1,9 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
 import './index.css'
-import Comp from './components/basicos/Primeiro'
+import App from './App'
 
-const tag = <strong>Olá</strong>
 ReactDOM.render(
-  <div>
-      <div><strong>{tag}</strong></div>,
-    <Comp></Comp>
-  </div>,
+  <App></App>,
   document.getElementById('root')
 )
