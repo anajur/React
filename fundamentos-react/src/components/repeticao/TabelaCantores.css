@@ -1,0 +1,18 @@
+.tabelaCantores th {
+    background-color: #000000;
+    color: #ffff;
+}
+
+.tabelaCantores table {
+    width: 100%;
+}
+
+.tabelaCantores .par {
+    background-color: #FFF8DE;
+    color: black;
+}
+
+.tabelaCantores .impar {
+    background-color: #D0E8C5;
+    color: black;
+}

@@ -1,13 +1,16 @@
-import React from "react";
+import React, {cloneElement} from "react";
 import './Basicos.css'
 import MembroFamilia from "./MembroFamilia";
 
 export default props => {
   return (
     <div>
-       <MembroFamilia nome="Bruno Mars"></MembroFamilia>
-       <MembroFamilia nome="Michael Jackson" {...props}></MembroFamilia>
-       <MembroFamilia nome="Beyoncé"></MembroFamilia>
+      {/* {React.cloneElement(props.children)} */}
+      {/* {cloneElement(props.children)} */}
+       {/* {props.children} */}
+       {props.children.map((child, i)=> {
+        return cloneElement(child,{...props, key: i})
+       })}
     </div>
   )
 }
